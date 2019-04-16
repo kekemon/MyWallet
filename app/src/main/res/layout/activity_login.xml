@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Wallet"
+            android:textColor="@color/colorNegro"
+            android:textSize="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <EditText
+            android:id="@+id/mobileField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Mobile Number"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/button"
+            android:textColor="@color/colorNegro"
+            android:layout_below="@+id/passwordField"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="FORGOT PIN CODE?"
+            android:gravity="center"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+
+</LinearLayout>
