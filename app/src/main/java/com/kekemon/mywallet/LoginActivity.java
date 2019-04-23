@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                         try {
                             jsonParam.put("mobile", mobile);
                             jsonParam.put("password", password);
-                            sendPost("http://192.168.1.125:8080/WalletWebService/Login",jsonParam);
+                            sendPost("http://192.168.1.125:80/WalletWebService/Login",jsonParam);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
