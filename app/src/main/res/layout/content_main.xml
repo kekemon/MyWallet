@@ -16,26 +16,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="30dp"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/billPayBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingRight="50dp"
-            android:background="@drawable/ic_launcher_foreground"
-            app:srcCompat="@drawable/bill_pay_icon" />
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/rechargeBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/billPayBtn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_foreground"
+                app:srcCompat="@drawable/mobile_recharge" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Mobile Recharge"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="50dp"
-            android:background="@drawable/ic_launcher_foreground"
-            app:srcCompat="@drawable/mobile_recharge" />
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_foreground"
+                app:srcCompat="@drawable/bill_pay_icon" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bill Payment"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center" />
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
